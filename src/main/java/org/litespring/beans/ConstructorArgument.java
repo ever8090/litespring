@@ -48,6 +48,8 @@ public class ConstructorArgument {
 
 
 	/**
+	 * 这里定义为内部类
+	 * 原因：该类只有ConstructorArgument来使用，做到了高内聚
 	 * Holder for a constructor argument value, with an optional type
 	 * attribute indicating the target type of the actual constructor argument.
 	 */

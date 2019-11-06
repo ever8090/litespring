@@ -40,7 +40,7 @@ public class ConstructorResolver {
 			throw new BeanCreationException( bd.getID(), "Instantiation of bean failed, can't resolve class", e);
 		}	
 		
-		
+		// 获得该类的所有构造方法信息（包括构造方法参数类型等）
 		Constructor<?>[] candidates = beanClass.getConstructors();	
 		
 		
