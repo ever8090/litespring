@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.litespring.beans.factory.BeanFactory</OriginalElement>
+  <nodes>
+    <node x="241.0" y="940.0">org.litespring.beans.ConstructorArgument</node>
+    <node x="283.0" y="475.0">org.litespring.aop.aspectj.AspectJAutoProxyCreator</node>
+    <node x="197.0" y="865.0">org.litespring.aop.config.MethodLocatingFactory</node>
+    <node x="287.75" y="80.0">org.litespring.beans.factory.config.AutowireCapableBeanFactory</node>
+    <node x="687.5" y="785.0">org.litespring.beans.TypeConverter</node>
+    <node x="0.0" y="865.0">org.litespring.aop.config.AspectInstanceFactory</node>
+    <node x="0.0" y="240.0">org.litespring.beans.factory.support.BeanDefinitionRegistry</node>
+    <node x="533.125" y="0.0">org.litespring.beans.factory.BeanFactory</node>
+    <node x="714.125" y="240.0">org.litespring.context.support.ClassPathXmlApplicationContext</node>
+    <node x="451.125" y="240.0">org.litespring.context.support.FileSystemXmlApplicationContext</node>
+    <node x="18.0" y="555.0">org.litespring.beans.factory.annotation.AutowiredAnnotationProcessor</node>
+    <node x="522.0" y="475.0">org.litespring.beans.factory.support.GenericBeanDefinition</node>
+    <node x="200.0" y="240.0">org.litespring.beans.factory.support.AbstractBeanFactory</node>
+    <node x="438.0" y="710.0">org.litespring.beans.factory.NoSuchBeanDefinitionException</node>
+    <node x="622.875" y="80.0">org.litespring.context.ApplicationContext</node>
+    <node x="178.25" y="395.0">org.litespring.beans.factory.config.BeanPostProcessor</node>
+    <node x="667.5" y="865.0">org.litespring.beans.SimpleTypeConverter</node>
+    <node x="106.75" y="320.0">org.litespring.beans.factory.support.DefaultBeanFactory</node>
+    <node x="200.0" y="710.0">org.litespring.beans.factory.BeanDefinitionStoreException</node>
+    <node x="459.5" y="785.0">org.litespring.beans.factory.annotation.InjectionElement</node>
+    <node x="0.0" y="710.0">org.litespring.beans.factory.BeanCreationException</node>
+    <node x="81.25" y="80.0">org.litespring.beans.factory.config.SingletonBeanRegistry</node>
+    <node x="598.375" y="160.0">org.litespring.context.support.AbstractApplicationContext</node>
+    <node x="363.25" y="630.0">org.litespring.beans.BeansException</node>
+    <node x="0.0" y="940.0">org.litespring.beans.factory.xml.XmlBeanDefinitionReader</node>
+    <node x="600.5" y="555.0">org.litespring.context.annotation.ScannedGenericBeanDefinition</node>
+    <node x="277.5" y="785.0">org.litespring.beans.factory.FactoryBean</node>
+    <node x="0.0" y="475.0">org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor</node>
+    <node x="60.25" y="160.0">org.litespring.beans.factory.support.DefaultSingletonBeanRegistry</node>
+    <node x="691.0" y="710.0">org.litespring.beans.TypeMismatchException</node>
+    <node x="646.5" y="395.0">org.litespring.beans.BeanDefinition</node>
+    <node x="658.0" y="940.0">org.litespring.beans.PropertyValue</node>
+    <node x="833.0" y="940.0">org.litespring.beans.factory.annotation.Autowired</node>
+    <node x="460.0" y="940.0">org.litespring.beans.factory.annotation.InjectionMetadata</node>
+    <node x="440.5" y="865.0">org.litespring.beans.factory.annotation.AutowiredFieldElement</node>
+    <node x="50.0" y="785.0">org.litespring.beans.factory.BeanFactoryAware</node>
+    <node x="300.25" y="160.0">org.litespring.beans.factory.config.ConfigurableBeanFactory</node>
+    <node x="718.0" y="475.0">org.litespring.beans.factory.annotation.AnnotatedBeanDefinition</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.litespring.aop.config.AspectInstanceFactory" target="org.litespring.beans.factory.BeanFactoryAware">
+      <point x="0.0" y="-15.0" />
+      <point x="-38.5" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.config.AutowireCapableBeanFactory" target="org.litespring.beans.factory.BeanFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="396.75" y="55.0" />
+      <point x="562.625" y="55.0" />
+      <point x="-29.5" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.support.AbstractBeanFactory" target="org.litespring.beans.factory.config.ConfigurableBeanFactory">
+      <point x="41.75" y="-15.0" />
+      <point x="325.25" y="215.0" />
+      <point x="396.75" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.context.support.AbstractApplicationContext" target="org.litespring.context.ApplicationContext">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.annotation.AnnotatedBeanDefinition" target="org.litespring.beans.BeanDefinition">
+      <point x="0.0" y="-15.0" />
+      <point x="815.0" y="450.0" />
+      <point x="745.5" y="450.0" />
+      <point x="33.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.BeanCreationException" target="org.litespring.beans.BeansException">
+      <point x="0.0" y="-15.0" />
+      <point x="90.0" y="680.0" />
+      <point x="380.375" y="680.0" />
+      <point x="-51.375" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.support.DefaultSingletonBeanRegistry" target="org.litespring.beans.factory.config.SingletonBeanRegistry">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.NoSuchBeanDefinitionException" target="org.litespring.beans.BeansException">
+      <point x="0.0" y="-15.0" />
+      <point x="554.5" y="690.0" />
+      <point x="448.875" y="690.0" />
+      <point x="17.125" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.config.ConfigurableBeanFactory" target="org.litespring.beans.factory.config.AutowireCapableBeanFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.support.DefaultBeanFactory" target="org.litespring.beans.factory.support.BeanDefinitionRegistry">
+      <point x="-40.0" y="-15.0" />
+      <point x="146.75" y="295.0" />
+      <point x="90.0" y="295.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.annotation.AutowiredAnnotationProcessor" target="org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.TypeMismatchException" target="org.litespring.beans.BeansException">
+      <point x="0.0" y="-15.0" />
+      <point x="785.0" y="680.0" />
+      <point x="483.125" y="680.0" />
+      <point x="51.375" y="15.0" />
+    </edge>
+    <edge source="org.litespring.aop.aspectj.AspectJAutoProxyCreator" target="org.litespring.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="380.0" y="450.0" />
+      <point x="294.5" y="450.0" />
+      <point x="38.75" y="15.0" />
+    </edge>
+    <edge source="org.litespring.context.annotation.ScannedGenericBeanDefinition" target="org.litespring.beans.factory.support.GenericBeanDefinition">
+      <point x="-56.0" y="-15.0" />
+      <point x="656.5" y="530.0" />
+      <point x="610.0" y="530.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.annotation.AutowiredFieldElement" target="org.litespring.beans.factory.annotation.InjectionElement">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.context.annotation.ScannedGenericBeanDefinition" target="org.litespring.beans.factory.annotation.AnnotatedBeanDefinition">
+      <point x="56.0" y="-15.0" />
+      <point x="768.5" y="530.0" />
+      <point x="815.0" y="530.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.context.support.FileSystemXmlApplicationContext" target="org.litespring.context.support.AbstractApplicationContext">
+      <point x="0.0" y="-15.0" />
+      <point x="572.625" y="215.0" />
+      <point x="650.375" y="215.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.aop.config.MethodLocatingFactory" target="org.litespring.beans.factory.FactoryBean">
+      <point x="46.5" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.SimpleTypeConverter" target="org.litespring.beans.TypeConverter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.context.ApplicationContext" target="org.litespring.beans.factory.BeanFactory">
+      <point x="0.0" y="-15.0" />
+      <point x="702.375" y="55.0" />
+      <point x="621.625" y="55.0" />
+      <point x="29.5" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor" target="org.litespring.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.0" />
+      <point x="131.5" y="450.0" />
+      <point x="217.0" y="450.0" />
+      <point x="-38.75" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.BeanDefinitionStoreException" target="org.litespring.beans.BeansException">
+      <point x="0.0" y="-15.0" />
+      <point x="309.0" y="690.0" />
+      <point x="414.625" y="690.0" />
+      <point x="-17.125" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.support.AbstractBeanFactory" target="org.litespring.beans.factory.support.DefaultSingletonBeanRegistry">
+      <point x="-41.75" y="-15.0" />
+      <point x="241.75" y="215.0" />
+      <point x="170.25" y="215.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.support.GenericBeanDefinition" target="org.litespring.beans.BeanDefinition">
+      <point x="0.0" y="-15.0" />
+      <point x="610.0" y="450.0" />
+      <point x="679.5" y="450.0" />
+      <point x="-33.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.beans.factory.support.DefaultBeanFactory" target="org.litespring.beans.factory.support.AbstractBeanFactory">
+      <point x="40.0" y="-15.0" />
+      <point x="226.75" y="295.0" />
+      <point x="283.5" y="295.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.litespring.aop.config.MethodLocatingFactory" target="org.litespring.beans.factory.BeanFactoryAware">
+      <point x="-46.5" y="-15.0" />
+      <point x="243.5" y="840.0" />
+      <point x="165.5" y="840.0" />
+      <point x="38.5" y="15.0" />
+    </edge>
+    <edge source="org.litespring.context.support.ClassPathXmlApplicationContext" target="org.litespring.context.support.AbstractApplicationContext">
+      <point x="0.0" y="-15.0" />
+      <point x="832.125" y="215.0" />
+      <point x="754.375" y="215.0" />
+      <point x="52.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="531.5" y="800.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
