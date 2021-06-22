@@ -1,13 +1,17 @@
 package org.litespring.beans;
 
-import java.beans.PropertyEditor;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.litespring.beans.propertyeditors.CustomBooleanEditor;
 import org.litespring.beans.propertyeditors.CustomNumberEditor;
 import org.litespring.util.ClassUtils;
 
+import java.beans.PropertyEditor;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 类型转换器
+ * 把传入的目标值value转换为对应的requiredType
+ */
 public class SimpleTypeConverter implements TypeConverter {
 	
 	private Map<Class<?>, PropertyEditor> defaultEditors;

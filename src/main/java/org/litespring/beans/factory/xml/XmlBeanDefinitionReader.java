@@ -1,9 +1,5 @@
 package org.litespring.beans.factory.xml;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Iterator;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
@@ -19,6 +15,10 @@ import org.litespring.beans.factory.support.BeanDefinitionRegistry;
 import org.litespring.beans.factory.support.GenericBeanDefinition;
 import org.litespring.core.io.Resource;
 import org.litespring.util.StringUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Iterator;
 
 public class XmlBeanDefinitionReader {
 	

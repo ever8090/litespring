@@ -7,7 +7,7 @@ public class PropertyValue {
 
 	private boolean converted = false;
 
-	private Object convertedValue;
+	private Object convertedValue;//这里貌似没用到
 	
 	public PropertyValue(String name, Object value) {
 		this.name = name;
