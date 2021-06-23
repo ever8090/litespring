@@ -4,8 +4,11 @@ import org.litespring.beans.factory.BeanFactory;
 import org.litespring.beans.factory.config.RuntimeBeanReference;
 import org.litespring.beans.factory.config.TypedStringValue;
 
+/**
+ * beanDefinition property的value解析器
+ */
 public class BeanDefinitionValueResolver {
-	private final BeanFactory beanFactory;
+	private final BeanFactory beanFactory;//为什么这里要持有factory呢？因为解析的时候需要从factory拿到实际的bean实列
 	
 	public BeanDefinitionValueResolver(
 			BeanFactory beanFactory) {

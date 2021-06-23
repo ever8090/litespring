@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * 类型转换器
- * 把传入的目标值value转换为对应的requiredType
+ * 把传入的目标值value转换为requiredType对应类型的值
  */
 public class SimpleTypeConverter implements TypeConverter {
 	
@@ -21,10 +21,10 @@ public class SimpleTypeConverter implements TypeConverter {
 	}
 	public <T> T convertIfNecessary(Object value, Class<T> requiredType) throws TypeMismatchException {
 		
-		if(ClassUtils.isAssignableValue(requiredType, value)){
+		if(ClassUtils.isAssignableValue(requiredType, value)){//如果value是string类型，requiredType不是string类型，这里是不支持的
 			return (T)value;			
 		} else{
-			if(value instanceof String){
+			if(value instanceof String){//value是string，则会进行转换
 				PropertyEditor editor = findDefaultEditor(requiredType);
 				try{
 					editor.setAsText((String)value);

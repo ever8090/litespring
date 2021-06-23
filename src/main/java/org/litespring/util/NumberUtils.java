@@ -7,6 +7,13 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 
 public abstract class NumberUtils {
+	/**
+	 * 字符串转为对应的数字类型
+	 * @param text
+	 * @param targetClass
+	 * @param <T>
+	 * @return
+	 */
 	public static <T extends Number> T parseNumber(String text, Class<T> targetClass) {
 		Assert.notNull(text, "Text must not be null");
 		Assert.notNull(targetClass, "Target class must not be null");

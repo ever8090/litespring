@@ -12,6 +12,10 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
 	private ClassLoader beanClassLoader;
 	
 	public AbstractApplicationContext(String configFile){
+		/**
+		 * 以下细节为beanFactory获取bean的代码，通过对这些细节的封装，抽象出applicationContext概念
+		 * 从而使获取bean的步骤更简单。这也是为什么要有applicationContext原因之一
+		 */
 		factory = new DefaultBeanFactory();
 		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);	
 		Resource resource = this.getResourceByPath(configFile);
